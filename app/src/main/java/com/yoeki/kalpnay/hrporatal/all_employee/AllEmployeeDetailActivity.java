@@ -269,7 +269,7 @@ public class AllEmployeeDetailActivity extends AppCompatActivity implements AppB
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
-
+////////////////New Changes Done
     @Override
     public void onOffsetChanged(AppBarLayout appBarLayout, int offset) {
         int maxScroll = appBarLayout.getTotalScrollRange();
