@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorgrey"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcy_shiftnew"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_shiftchangesubmit">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_shiftchangesubmit"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        android:text="Submit"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="@dimen/textFrSubmitButton"
+        android:typeface="serif" />
+
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorgrey">
+
+    <RelativeLayout
+        android:id="@+id/rl_reqhomehead"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorPrimary">
+
+        <com.yoeki.kalpnay.hrporatal.setting.TextclassTextFrHeader
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Critical illness"
+            android:textSize="@dimen/textFrHeading"
+            android:textColor="@color/textcolor"/>
+
+        <ImageView
+            android:id="@+id/critical_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="04dp"
+            android:scaleType="fitXY"
+            android:background="@mipmap/back"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="left|center"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="7dp"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:elevation="7dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="7dp">
+
+        <WebView
+            android:id="@+id/webviewcritical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></WebView>
+        <!--<com.yoeki.kalpnay.hrporatal.setting.Textclass
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:text="We are at increasing risk of falling prey to life-style diseases. According to estimates of various global and domestic organizations, with increasing prevalence of life-style diseases in the country, one out of four Indians is at risk of dying from non-communicable diseases like cardio-vascular ailments or cancer before the age of 70.
+
+Sticking to a healthy diet and following an exercise regime could keep many such unwanted ailments at bay. But, sometimes due to hereditary reasons and m ..
+
+"
+            android:textColor="@color/colorlightblack"/>-->
+    </android.support.v7.widget.CardView>
+</android.support.v7.widget.LinearLayoutCompat>

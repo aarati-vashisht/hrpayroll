@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+   <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorAccent"
+            android:layout_margin="05dp">
+
+            <LinearLayout
+                android:id="@+id/fromTo"
+                android:layout_below="@+id/dateRange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.yoeki.kalpnay.hrporatal.setting.TextclassfrHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorblack"
+                        android:layout_weight=".5"
+                        android:layout_gravity="center"
+                        android:editable="false"
+                        android:textSize="14dp"
+                        android:text="Date"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:orientation="horizontal"
+                        android:layout_margin="05dp"
+                        android:layout_weight=".5"
+                        android:gravity="left"
+                        android:background="@drawable/popupbackground">
+
+                        <com.yoeki.kalpnay.hrporatal.setting.Edittextclass
+                            android:id="@+id/Stat_fromdate"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/colorblack"
+                            android:paddingLeft="07dp"
+                            android:textAlignment="viewStart"
+                            android:hint="MM/DD/YYYY"
+                            android:editable="false"
+                            android:textColorHint="#757575"
+                            android:textSize="13dp"
+                            android:backgroundTint="@color/transparent"/>
+
+                        <FrameLayout android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="05dp"
+                            android:paddingRight="07dp"
+                            android:layout_gravity="end">
+
+                            <android.support.v7.widget.AppCompatButton
+                                android:id="@+id/HolidayFrom_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/transparent"/>
+
+                            <android.support.v7.widget.AppCompatImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:scaleType="fitXY"
+                                android:background="@mipmap/calender"
+                                android:layout_gravity="end|center"/>
+                        </FrameLayout>
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.yoeki.kalpnay.hrporatal.setting.TextclassfrHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorblack"
+                        android:layout_gravity="center"
+                        android:editable="false"
+                        android:layout_weight=".5"
+                        android:textSize="14dp"
+                        android:text="From Time" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:orientation="horizontal"
+                        android:layout_margin="05dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/popupbackground">
+
+                        <com.yoeki.kalpnay.hrporatal.setting.Edittextclass
+                            android:id="@+id/from_time_edittext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorblack"
+                            android:textAlignment="viewStart"
+                            android:paddingLeft="07dp"
+                            android:textSize="13dp"
+                            android:hint="HH:MM"
+                            android:editable="false"
+                            android:textColorHint="#757575"
+                            android:backgroundTint="@color/transparent"/>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="05dp"
+                            android:layout_gravity="end"
+                            android:paddingRight="07dp">
+                            <android.support.v7.widget.AppCompatButton
+                                android:id="@+id/time_from"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/transparent"/>
+                            <android.support.v7.widget.AppCompatImageView
+                                android:id="@+id/calender"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:scaleType="fitXY"
+                                android:background="@mipmap/clock"
+                                android:layout_gravity="end|center"/>
+                        </FrameLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <com.yoeki.kalpnay.hrporatal.setting.TextclassfrHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_weight=".5"
+                        android:textColor="@color/colorblack"
+                        android:layout_gravity="center"
+                        android:editable="false"
+                        android:textSize="14dp"
+                        android:text="To Time"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:orientation="horizontal"
+                        android:layout_margin="05dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/popupbackground">
+
+                        <com.yoeki.kalpnay.hrporatal.setting.Edittextclass
+                            android:id="@+id/to_time_edittext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorblack"
+                            android:hint="HH:MM"
+                            android:paddingLeft="07dp"
+                            android:textSize="13dp"
+                            android:editable="false"
+                            android:textColorHint="#757575"
+                            android:backgroundTint="@color/transparent"/>
+
+                        <FrameLayout android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="07dp"
+                            android:layout_gravity="end">
+
+                            <android.support.v7.widget.AppCompatButton
+                                android:id="@+id/time_to"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/transparent"/>
+
+                            <android.support.v7.widget.AppCompatImageView
+                                android:id="@+id/calender2"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:scaleType="fitXY"
+                                android:background="@mipmap/clock"
+                                android:layout_gravity="end|center"/>
+                        </FrameLayout>
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <com.yoeki.kalpnay.hrporatal.setting.TextclassfrHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorblack"
+                        android:layout_gravity="center"
+                        android:editable="false"
+                        android:layout_weight=".5"
+                        android:textSize="14dp"
+                        android:text="No. of hours" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:orientation="horizontal"
+                        android:layout_margin="05dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/popupbackground">
+
+                        <com.yoeki.kalpnay.hrporatal.setting.Edittextclass
+                            android:id="@+id/wrked_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorblack"
+                            android:gravity="center|left"
+                            android:textSize="13dp"
+                            android:editable="false"
+                            android:textColorHint="#757575"
+                            android:paddingRight="07dp"
+                            android:paddingLeft="07dp"
+                            android:backgroundTint="@color/transparent"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <com.yoeki.kalpnay.hrporatal.setting.TextclassfrHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorblack"
+                        android:textAlignment="viewStart"
+                        android:editable="false"
+                        android:layout_weight=".5"
+                        android:textSize="14dp"
+                        android:text="Asigned by." />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:orientation="horizontal"
+                        android:layout_margin="05dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/popupbackground">
+
+                        <com.yoeki.kalpnay.hrporatal.setting.Edittextclass
+                            android:id="@+id/wrked_asigned"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorblack"
+                            android:textAlignment="viewStart"
+                            android:editable="true"
+                            android:singleLine="true"
+                            android:textSize="13dp"
+                            android:textColorHint="#757575"
+                            android:paddingRight="07dp"
+                            android:paddingLeft="07dp"
+                            android:backgroundTint="@color/transparent"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <com.yoeki.kalpnay.hrporatal.setting.TextclassfrHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorblack"
+                    android:textAlignment="viewStart"
+                    android:editable="false"
+                    android:textSize="14dp"
+                    android:text="Task Description" />
+
+                    <com.yoeki.kalpnay.hrporatal.setting.Edittextclass
+                        android:id="@+id/time_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:textColor="@color/colorblack"
+                        android:textColorHint="#757575"
+                        android:gravity="top"
+                        android:scrollbars="vertical"
+                        android:padding="4dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingRight="07dp"
+                        android:paddingLeft="07dp"
+                        android:background="@drawable/edity_textbackground"/>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_timeentryadd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:text="Add More"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="13dp"
+                    android:typeface="serif" />
+            </LinearLayout>
+
+        </LinearLayout>
+</ScrollView>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorgrey">
+
+    <RelativeLayout
+        android:id="@+id/rl_reqhomehead"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorPrimary">
+
+        <com.yoeki.kalpnay.hrporatal.setting.TextclassTextFrHeader
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Personal Benefits"
+            android:textSize="@dimen/textFrHeading"
+            android:textColor="@color/textcolor"/>
+
+        <ImageView
+            android:id="@+id/personal_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="04dp"
+            android:scaleType="fitXY"
+            android:background="@mipmap/back"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="left|center"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="7dp"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:elevation="7dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="7dp">
+
+        <WebView
+            android:id="@+id/web_personalbenifits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></WebView>
+       <!-- <com.yoeki.kalpnay.hrporatal.setting.Textclass
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:text="Workers currently earning less than $455 per week, which is $23,660 per year, are currently guaranteed federal overtime protection. There are exemptions for highly compensated employees who customarily and regularly perform any one or more of the exempt duties or responsibilities of an executive, administrative, or professional employee.
+According to the Department of Labor, employees covered by the FLSA must receive overtime pay for hours worked in excess of 40 in a workweek at a rate not less than time and one-half their regular rates of pay.
+"
+            android:textColor="@color/colorlightblack"/>-->
+    </android.support.v7.widget.CardView>
+</android.support.v7.widget.LinearLayoutCompat>

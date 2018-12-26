@@ -1,0 +1,469 @@
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/hr_background"
+        android:orientation="vertical"
+        android:layout_weight=".2"
+        android:gravity="center">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundiconbankdetails"/>
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <ScrollView
+        android:id="@+id/after_selectBank"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".1"
+        android:visibility="visible">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackground"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <com.yoeki.kalpnay.hrporatal.setting.TextclassfrHeading
+                android:textSize="@dimen/textFrHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:editable="false"
+                android:text="Bank Name" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:background="@drawable/spinner_border_color"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp">
+
+                <com.yoeki.kalpnay.hrporatal.setting.Edittextclass
+                    android:id="@+id/bankname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:paddingTop="08dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/colorText"
+                    android:background="@android:color/transparent"/>
+
+                <FrameLayout
+                    android:id="@+id/frame_bnkName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:background="@mipmap/down_arrow"
+                        android:layout_gravity="end|center"
+                        android:layout_margin="10dp"/>
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"
+                        android:id="@+id/bankselect"
+                        android:visibility="visible"/>
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.yoeki.kalpnay.hrporatal.setting.TextclassfrHeading
+                    android:textSize="@dimen/textFrHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:editable="false"
+                    android:text="Account Number"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="@drawable/spinner_border_color"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp">
+
+                    <com.yoeki.kalpnay.hrporatal.setting.Edittextclass
+                        android:id="@+id/account_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColorHint="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/colorText"
+                        android:background="@android:color/transparent"/>
+
+                <FrameLayout
+                    android:id="@+id/frame_accountNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="19dp"
+                        android:layout_height="19dp"
+                        android:background="@mipmap/edit_green3236"
+                        android:layout_gravity="end|center"
+                        android:layout_margin="10dp"/>
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"
+                        android:id="@+id/accuntNumber_edit"
+                        android:layout_gravity="end"
+                        android:visibility="visible"/>
+
+                </FrameLayout>
+
+                </FrameLayout>
+
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.yoeki.kalpnay.hrporatal.setting.TextclassfrHeading
+                    android:textSize="@dimen/textFrHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:editable="false"
+                    android:text="Branch Name"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="@drawable/spinner_border_color"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp">
+
+                    <com.yoeki.kalpnay.hrporatal.setting.Edittextclass
+                        android:id="@+id/branchname"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColorHint="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:paddingTop="08dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/colorText"
+                        android:background="@android:color/transparent"/>
+
+                    <FrameLayout
+                        android:id="@+id/frame_BranchName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="visible">
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:layout_width="17dp"
+                            android:layout_height="17dp"
+                            android:background="@mipmap/down_arrow"
+                            android:layout_gravity="end|center"
+                            android:layout_margin="10dp"/>
+
+                        <android.support.v7.widget.AppCompatButton
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/transparent"
+                            android:id="@+id/branchselect"
+                            android:visibility="visible"/>
+
+                    </FrameLayout>
+
+                </FrameLayout>
+
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".1"
+                android:orientation="vertical">
+
+                <com.yoeki.kalpnay.hrporatal.setting.TextclassfrHeading
+                    android:textSize="@dimen/textFrHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:editable="false"
+                    android:text="Account Type"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="@drawable/spinner_border_color"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp">
+
+                    <com.yoeki.kalpnay.hrporatal.setting.Edittextclass
+                        android:id="@+id/Accounttype"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColorHint="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:paddingTop="08dp"
+                        android:textColor="@color/colorText"
+                        android:background="@android:color/transparent"/>
+
+                    <FrameLayout
+                        android:id="@+id/frame_AccoutnType"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="visible">
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:layout_width="17dp"
+                            android:layout_height="17dp"
+                            android:background="@mipmap/down_arrow"
+                            android:layout_gravity="end|center"
+                            android:layout_margin="10dp"/>
+
+                        <android.support.v7.widget.AppCompatButton
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/transparent"
+                            android:id="@+id/Accounttypeselect"
+                            android:visibility="visible"/>
+
+                    </FrameLayout>
+
+                </FrameLayout>
+
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <!--</android.support.v7.widget.LinearLayoutCompat>-->
+            <!--<android.support.v7.widget.LinearLayoutCompat-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight=".1">-->
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".1"
+                android:orientation="vertical">
+
+                <com.yoeki.kalpnay.hrporatal.setting.TextclassfrHeading
+                    android:textSize="@dimen/textFrHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:editable="false"
+                    android:text="IFSC/MICR Code"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="@drawable/spinner_border_color"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp">
+
+                    <com.yoeki.kalpnay.hrporatal.setting.Edittextclass
+                        android:id="@+id/ifsc"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColorHint="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/colorText"
+                        android:background="@android:color/transparent"/>
+
+                <FrameLayout
+                    android:id="@+id/frame_IFSCcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="19dp"
+                        android:layout_height="19dp"
+                        android:background="@mipmap/edit_green3236"
+                        android:layout_gravity="end|center"
+                        android:layout_margin="10dp"/>
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"
+                        android:id="@+id/IFSCbtn_edit"
+                        android:layout_gravity="end"
+                        android:visibility="visible"/>
+
+                </FrameLayout>
+
+                </FrameLayout>
+
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <!--</android.support.v7.widget.LinearLayoutCompat>-->
+            <!--<android.support.v7.widget.LinearLayoutCompat-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight=".1">-->
+
+
+
+
+
+            <!--<android.support.v7.widget.LinearLayoutCompat-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight=".1"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<com.yoeki.kalpnay.hrporatal.setting.TextclassfrHeading-->
+                    <!--android:textSize="@dimen/textFrHeader"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:textColor="@color/colorPrimaryDark"-->
+                    <!--android:editable="false"-->
+                    <!--android:text="Branch Address"/>-->
+
+                <!--<FrameLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="36dp"-->
+                    <!--android:background="@drawable/spinner_border_color"-->
+                    <!--android:layout_marginRight="20dp"-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:layout_marginTop="10dp">-->
+
+                    <!--<com.yoeki.kalpnay.hrporatal.setting.Edittextclass-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:textColorHint="@color/colorPrimaryDark"-->
+                        <!--android:textSize="14sp"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_marginLeft="10dp"-->
+                        <!--android:textColor="@color/colorText"-->
+                        <!--android:background="@android:color/transparent"/>-->
+
+                    <!--<FrameLayout-->
+                        <!--android:id="@+id/frame_branchAddress"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:visibility="visible">-->
+
+                        <!--<android.support.v7.widget.AppCompatImageView-->
+                            <!--android:layout_width="19dp"-->
+                            <!--android:layout_height="19dp"-->
+                            <!--android:background="@mipmap/edit_green3236"-->
+                            <!--android:layout_gravity="end|center"-->
+                            <!--android:layout_margin="10dp"/>-->
+
+                        <!--<android.support.v7.widget.AppCompatButton-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:background="@color/transparent"-->
+                            <!--android:id="@+id/Branch_address"-->
+                            <!--android:layout_gravity="end"-->
+                            <!--android:visibility="visible"/>-->
+
+                    <!--</FrameLayout>-->
+
+                <!--</FrameLayout>-->
+
+
+            <!--</android.support.v7.widget.LinearLayoutCompat>-->
+
+
+
+
+
+            <!--</android.support.v7.widget.LinearLayoutCompat>-->
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/submit"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:background="@color/colorPrimaryDark"
+                android:textAlignment="center"
+                android:text="Submit"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:typeface="serif"
+                android:textSize="15sp"
+                android:textColor="#fff"/>
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+
+
+
+
+    </ScrollView>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/selectBank"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".1"
+        android:visibility="gone"
+        android:background="@color/colorAccent">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="5dp"
+            android:id="@+id/Account_selection_recycler"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="05dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"/>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+
+
+</android.support.v7.widget.LinearLayoutCompat>

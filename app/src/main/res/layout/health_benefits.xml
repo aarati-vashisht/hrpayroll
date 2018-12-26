@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorgrey">
+
+    <RelativeLayout
+        android:id="@+id/rl_reqhomehead"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorPrimary">
+
+        <com.yoeki.kalpnay.hrporatal.setting.TextclassTextFrHeader
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Medical Insurance"
+            android:textSize="@dimen/textFrHeading"
+            android:textColor="@color/textcolor"/>
+
+            <ImageView
+                android:id="@+id/benefits_back"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="04dp"
+                android:scaleType="fitXY"
+                android:background="@mipmap/back"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="left|center"/>
+
+     </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="7dp"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:elevation="7dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="7dp">
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </WebView>
+      <!-- <com.yoeki.kalpnay.hrporatal.setting.Textclass
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:padding="7dp"
+           android:text="Medical insurance covers the costs of physician and surgeon fees, hospital rooms, and prescription drugs. Dental and optical care might be offered as part of an overall benefits package. It may be offered as separate pieces or not covered at all. Coverage can sometimes include the employee's family (dependents).
+Employers usually pay all or part of the premium for employee medical insurance. Often employees pay a percentage of the monthly cost. The cost of insurance through an employer
+"
+           android:textColor="@color/colorlightblack"/>-->
+    </android.support.v7.widget.CardView>
+</android.support.v7.widget.LinearLayoutCompat>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorline">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/img_timeentryback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/back"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"/>
+
+        <com.yoeki.kalpnay.hrporatal.setting.TextclassTextFrHeader
+            android:textSize="@dimen/textFrHeading"
+            android:text="Time Entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="50dp"
+            android:textColor="#fff"
+            android:layout_marginTop="13dp"/>
+
+    </RelativeLayout>
+   <!-- <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorPrimaryDark">
+
+        <FrameLayout
+            android:id="@+id/frm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/timeEnter_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@mipmap/back"
+                android:layout_gravity="left|center"/>
+        </FrameLayout>
+        <com.yoeki.kalpnay.hrporatal.setting.TextclassTextFrHeader
+            android:textSize="@dimen/textFrHeading"
+            android:text="Time Entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginLeft="50dp"
+            android:textColor="#fff"
+            android:layout_marginTop="13dp"/>
+
+    </android.support.v7.widget.Toolbar>
+-->
+    <!--<View
+        android:layout_below="@+id/rl_reqhomehead"
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:visibility="visible"
+        android:background="#D3D3D3" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_below="@+id/view"
+        android:id="@+id/switcha"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark">
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/ShowEntries"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
+            android:checked="false"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:text="Show Entries"
+            android:theme="@style/SCBSwitch"/>
+    </android.support.v7.widget.LinearLayoutCompat>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcy_timentry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_header"
+        android:layout_above="@+id/footer"
+        android:layout_marginTop="10dp">
+    </android.support.v7.widget.RecyclerView>
+
+      <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/time_entrySubmit"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/colorPrimaryDark"
+            android:textAlignment="center"
+            android:text="Submit"
+            android:typeface="serif"
+            android:textSize="@dimen/textFrSubmitButton"
+            android:textColor="#fff"/>
+
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/footer"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true">-->
+
+        <!--<android.support.v7.widget.AppCompatButton-->
+            <!--android:id="@+id/enter"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="46dp"-->
+            <!--android:background="@color/colorPrimaryDark"-->
+            <!--android:textAlignment="center"-->
+            <!--android:text="Submit"-->
+            <!--android:typeface="serif"-->
+            <!--android:textSize="15sp"-->
+            <!--android:textColor="#fff"/>-->
+
+    <!--</RelativeLayout>-->
+
+</RelativeLayout>
