@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <android.support.v7.widget.LinearLayoutCompat
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+=======
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
     android:orientation="vertical"
     android:background="@color/colorgrey">
 
@@ -21,6 +28,7 @@
             android:textSize="@dimen/textFrHeading"
             android:textColor="@color/textcolor"/>
 
+<<<<<<< HEAD
         <FrameLayout android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginLeft="05dp">
@@ -99,4 +107,42 @@
 
     </android.support.v7.widget.LinearLayoutCompat>
 
+=======
+        <ImageView
+            android:id="@+id/retairement_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="04dp"
+            android:scaleType="fitXY"
+            android:background="@mipmap/back"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="left|center"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="7dp"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:elevation="7dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="7dp">
+
+        <WebView
+            android:id="@+id/webviewretirment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></WebView>
+
+        <!--<com.yoeki.kalpnay.hrporatal.setting.Textclass
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:text="Retirement benefits are funds set aside to provide people with an income or pension when they end their careers. Retirement plans fit into two general categories:
+            •In defined benefit plans (sometimes called pension plans), the benefit amount is pre-determined based on salary and the years of service. In these plans, the employer bears the risk of the investment.
+            .In defined contribution plans (such as a 401k plan), employer or employee contributions are specified, but the benefit amount is usually tied to investment returns, which are not guaranteed.
+             "
+            android:textColor="@color/colorlightblack"/>-->
+    </android.support.v7.widget.CardView>
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
 </android.support.v7.widget.LinearLayoutCompat>

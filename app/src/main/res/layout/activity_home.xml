@@ -19,7 +19,11 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
+<<<<<<< HEAD
         android:backgroundTint="@color/white"
+=======
+        android:background="@color/textcolor"
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
         app:headerLayout="@layout/nav_header_home"
         app:menu="@menu/activity_home_drawer"
         app:itemIconTint="@color/colorPrimary"

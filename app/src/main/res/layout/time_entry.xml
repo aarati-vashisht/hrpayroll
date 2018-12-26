@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <android.support.v7.widget.LinearLayoutCompat
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -8,12 +9,56 @@
    android:background="@color/colorline">0
 
     <android.support.v7.widget.Toolbar
+=======
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorline">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/img_timeentryback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/back"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"/>
+
+        <com.yoeki.kalpnay.hrporatal.setting.TextclassTextFrHeader
+            android:textSize="@dimen/textFrHeading"
+            android:text="Time Entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="50dp"
+            android:textColor="#fff"
+            android:layout_marginTop="13dp"/>
+
+    </RelativeLayout>
+   <!-- <android.support.v7.widget.Toolbar
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:background="@color/colorPrimaryDark">
 
+<<<<<<< HEAD
         <FrameLayout android:layout_width="wrap_content"
+=======
+        <FrameLayout
+            android:id="@+id/frm"
+            android:layout_width="wrap_content"
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
             android:layout_height="wrap_content">
 
             <android.support.v7.widget.AppCompatButton
@@ -22,12 +67,20 @@
                 android:layout_height="wrap_content"
                 android:background="@color/transparent"/>
 
+<<<<<<< HEAD
             <ImageView android:layout_width="25dp"
+=======
+            <ImageView
+                android:layout_width="25dp"
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
                 android:layout_height="25dp"
                 android:background="@mipmap/back"
                 android:layout_gravity="left|center"/>
         </FrameLayout>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
         <com.yoeki.kalpnay.hrporatal.setting.TextclassTextFrHeader
             android:textSize="@dimen/textFrHeading"
             android:text="Time Entry"
@@ -39,8 +92,13 @@
             android:layout_marginTop="13dp"/>
 
     </android.support.v7.widget.Toolbar>
+<<<<<<< HEAD
 
     <View
+=======
+-->
+    <!--<View
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
         android:layout_below="@+id/rl_reqhomehead"
         android:id="@+id/view"
         android:layout_width="match_parent"
@@ -68,6 +126,7 @@
             android:textColor="#fff"
             android:text="Show Entries"
             android:theme="@style/SCBSwitch"/>
+<<<<<<< HEAD
 
     </android.support.v7.widget.LinearLayoutCompat>
 
@@ -335,6 +394,20 @@
    </ScrollView>
 
     <RelativeLayout
+=======
+    </android.support.v7.widget.LinearLayoutCompat>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcy_timentry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_header"
+        android:layout_above="@+id/footer"
+        android:layout_marginTop="10dp">
+    </android.support.v7.widget.RecyclerView>
+
+      <RelativeLayout
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
         android:id="@+id/footer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -372,4 +445,8 @@
 
     <!--</RelativeLayout>-->
 
+<<<<<<< HEAD
 </android.support.v7.widget.LinearLayoutCompat>
+=======
+</RelativeLayout>
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05

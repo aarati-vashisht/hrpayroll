@@ -14,6 +14,12 @@ import android.widget.TextView;
 import com.yoeki.kalpnay.hrporatal.Login.Api;
 import com.yoeki.kalpnay.hrporatal.Login.ApiInterface;
 import com.yoeki.kalpnay.hrporatal.R;
+<<<<<<< HEAD
+=======
+import com.yoeki.kalpnay.hrporatal.Request.Claim.ClaimActivity;
+import com.yoeki.kalpnay.hrporatal.Request.Leave.LeaveRequest;
+import com.yoeki.kalpnay.hrporatal.Request.shiftchangemanager.ShiftmanagerHomeactivity;
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
 import com.yoeki.kalpnay.hrporatal.setting.preferance;
 
 import java.util.ArrayList;
@@ -77,7 +83,11 @@ public class RequestMenu extends AppCompatActivity implements View.OnClickListen
                 startActivity(intentgreveance);
                 break;
             case R.id.ly_shiftchange:
+<<<<<<< HEAD
                 Intent intentshiftchange=new Intent(RequestMenu.this,ShiftChange.class);
+=======
+                Intent intentshiftchange=new Intent(RequestMenu.this,ShiftmanagerHomeactivity.class);
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
                 startActivity(intentshiftchange);
                 break;
             case R.id.ly_advance:

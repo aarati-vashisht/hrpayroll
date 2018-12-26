@@ -12,9 +12,16 @@ import android.widget.CompoundButton;
 import com.yoeki.kalpnay.hrporatal.HomeMenu.HomeActivity;
 import com.yoeki.kalpnay.hrporatal.Question_surevey;
 import com.yoeki.kalpnay.hrporatal.R;
+<<<<<<< HEAD
 import com.yoeki.kalpnay.hrporatal.Request.LeaveRequest;
 import com.yoeki.kalpnay.hrporatal.TimeAttendance.Approval_Request.ViewPager.RequestManagementTab;
 import com.yoeki.kalpnay.hrporatal.TimeAttendance.Holidays.Holiday_activity;
+=======
+import com.yoeki.kalpnay.hrporatal.Request.Leave.LeaveRequest;
+import com.yoeki.kalpnay.hrporatal.TimeAttendance.Approval_Request.ViewPager.RequestManagementTab;
+import com.yoeki.kalpnay.hrporatal.TimeAttendance.Holidays.Holiday_activity;
+import com.yoeki.kalpnay.hrporatal.TimeAttendance.Leave_summery.SummeryHomeActivity;
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
 import com.yoeki.kalpnay.hrporatal.TimeAttendance.Time.TimeEntry;
 
 /**
@@ -22,7 +29,11 @@ import com.yoeki.kalpnay.hrporatal.TimeAttendance.Time.TimeEntry;
  */
 
 public class TimeAttendance_Menu extends AppCompatActivity {
+<<<<<<< HEAD
     CardView time_sheet,holiday,leave_request,leave_balance,approve_Request;
+=======
+    CardView time_sheet,holiday,leave_request,leave_balance,leave_summery;
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
     SwitchCompat switchCompat;
     AppCompatButton img_backrequest;
     int i;
@@ -35,7 +46,12 @@ public class TimeAttendance_Menu extends AppCompatActivity {
         holiday = (CardView)findViewById(R.id.holiday);
         leave_request = (CardView)findViewById(R.id.leave_request);
         leave_balance = (CardView)findViewById(R.id.leave_balance);
+<<<<<<< HEAD
 //        approve_Request = (CardView)findViewById(R.id.approve_Request);
+=======
+        leave_summery=findViewById(R.id.leave_summery);
+        //approve_Request = (CardView)findViewById(R.id.approve_Request);
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
         switchCompat=(SwitchCompat)findViewById(R.id.ShowRequest);
         img_backrequest = (AppCompatButton)findViewById(R.id.img_backrequest);
 
@@ -48,6 +64,21 @@ public class TimeAttendance_Menu extends AppCompatActivity {
             }
         });
 
+<<<<<<< HEAD
+=======
+        leave_summery.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent=new Intent(TimeAttendance_Menu.this, SummeryHomeActivity.class);
+                startActivity(intent);
+
+//                finish();
+
+            }
+        });
+
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
         time_sheet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

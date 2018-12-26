@@ -28,7 +28,10 @@ public class SalaryDetailActivity extends AppCompatActivity implements View.OnCl
         initialize();
         setupViewPager(viewpager_salary);
         tabs_salary.setupWithViewPager(viewpager_salary);
+<<<<<<< HEAD
         img_salarydetailback.setOnClickListener(this);
+=======
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
 
     }
     @Override
@@ -48,11 +51,17 @@ public class SalaryDetailActivity extends AppCompatActivity implements View.OnCl
     private void setupViewPager(ViewPager viewPager){
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new SalarypaystructureFragment(), "Pay Structure");
+<<<<<<< HEAD
         adapter.addFragment(new ViewSalarystructureFragment(), "View PaySilp");
         adapter.addFragment(new SalaryEndsFragment(), "Adavance Salary");
         viewPager.setAdapter(adapter);
         viewPager.setOffscreenPageLimit(3);
 
+=======
+        adapter.addFragment(new ViewSalarystructureFragment(), "View Payshilp");
+        adapter.addFragment(new SalaryEndsFragment(), "Ends");
+        viewPager.setAdapter(adapter);
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
     }
 
     class ViewPagerAdapter extends FragmentPagerAdapter {

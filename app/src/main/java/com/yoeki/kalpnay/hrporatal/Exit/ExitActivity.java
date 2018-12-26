@@ -15,9 +15,13 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+<<<<<<< HEAD
 import com.yoeki.kalpnay.hrporatal.Interview.InterviewScheduleActivity;
 import com.yoeki.kalpnay.hrporatal.R;
 import com.yoeki.kalpnay.hrporatal.Request.ClaimActivity;
+=======
+import com.yoeki.kalpnay.hrporatal.R;
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

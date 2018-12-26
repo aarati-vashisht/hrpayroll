@@ -3,6 +3,7 @@ package com.yoeki.kalpnay.hrporatal.TimeAttendance.Time;
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
+<<<<<<< HEAD
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -14,11 +15,26 @@ import android.widget.DatePicker;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
+=======
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.AppCompatButton;
+import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.SwitchCompat;
+import android.view.View;
+import android.widget.DatePicker;
+import android.widget.ImageView;
+import android.widget.TimePicker;
+import android.widget.Toast;
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
 import com.yoeki.kalpnay.hrporatal.Login.Api;
 import com.yoeki.kalpnay.hrporatal.Login.ApiInterface;
 import com.yoeki.kalpnay.hrporatal.R;
 import com.yoeki.kalpnay.hrporatal.TimeAttendance.Model.TimeAttendance_Info.TimeAttendance_Recieve;
 import com.yoeki.kalpnay.hrporatal.TimeAttendance.Model.TimeAttendance_Info.TimeEntryData;
+<<<<<<< HEAD
 import com.yoeki.kalpnay.hrporatal.TimeAttendance.TimeAttendance_Menu;
 import com.yoeki.kalpnay.hrporatal.setting.Edittextclass;
 
@@ -27,6 +43,14 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
+=======
+import com.yoeki.kalpnay.hrporatal.setting.Edittextclass;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -37,14 +61,27 @@ public class TimeEntry extends AppCompatActivity {
     AppCompatButton timeEnter_home,time_from,time_to,HolidayFrom_date,time_entrySubmit;
     Edittextclass from_time_edittext,to_time_edittext,Stat_fromdate,wrked_time,time_desc;
     private int mHour, mMinute, whichtime=0, mYear, mMonth, mDay;
+<<<<<<< HEAD
     String Com_fromTime, Com_toTime;
     SwitchCompat switchCompatEntries;
     ApiInterface apiInterface;
+=======
+    String Com_fromTime, Com_toTime,strtimestart,strtimeends;
+    SwitchCompat switchCompatEntries;
+    ApiInterface apiInterface;
+    RecyclerView rcy_timentry;
+    ArrayList<TimeentryModel>arraytimeentrylist;
+    int days;
+    Adapter_timeentry adapter;
+    ImageView img_timeentryback;
+
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.time_entry);
 
+<<<<<<< HEAD
         timeEnter_home = (AppCompatButton)findViewById(R.id.timeEnter_home);
         HolidayFrom_date = (AppCompatButton)findViewById(R.id.HolidayFrom_date);
         time_from = (AppCompatButton)findViewById(R.id.time_from);
@@ -89,6 +126,45 @@ public class TimeEntry extends AppCompatActivity {
         });
 
         switchCompatEntries.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+=======
+        arraytimeentrylist=new ArrayList<>();
+
+           // timeEnter_home = (AppCompatButton)findViewById(R.id.timeEnter_home);
+          // HolidayFrom_date = (AppCompatButton)findViewById(R.id.HolidayFrom_date);
+         // time_entrySubmit = (AppCompatButton)findViewById(R.id.time_entrySubmit);
+        //switchCompatEntries=(SwitchCompat)findViewById(R.id.ShowEntries);
+
+        img_timeentryback=findViewById(R.id.img_timeentryback);
+
+        img_timeentryback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+        rcy_timentry=findViewById(R.id.rcy_timentry);
+
+        uploaddata();
+
+      /*  HolidayFrom_date.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                datePicker();
+            }
+        });*/
+
+       /* timeEnter_home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(getApplicationContext(),TimeAttendance_Menu.class);
+                startActivity(intent);
+                finish();
+            }
+        });*/
+
+       /* switchCompatEntries.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 
@@ -103,23 +179,40 @@ public class TimeEntry extends AppCompatActivity {
                 }
             }
 
+<<<<<<< HEAD
         });
 
         time_entrySubmit.setOnClickListener(new View.OnClickListener() {
+=======
+        });*/
+
+       /* time_entrySubmit.setOnClickListener(new View.OnClickListener() {
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
             @Override
             public void onClick(View v) {
                 serverCode();
             }
+<<<<<<< HEAD
         });
     }
 
     @Override
+=======
+        });*/
+    }
+
+   /* @Override
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
     public void onBackPressed() {
         super.onBackPressed();
         Intent intent = new Intent(getApplicationContext(),TimeAttendance_Menu.class);
         startActivity(intent);
         finish();
+<<<<<<< HEAD
     }
+=======
+    }*/
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
 
     private void tiemPicker(){
         // Get Current Time
@@ -151,6 +244,22 @@ public class TimeEntry extends AppCompatActivity {
                                 int hours = (int) (mills / (1000 * 60 * 60));
                                 int mins = (int) ((mills / (1000 * 60)) % 60);
                                 wrked_time.setText(String.format("%02d:%02d", hours, mins));
+<<<<<<< HEAD
+=======
+
+                                String strtime=String.format("%02d:%02d", hours, mins);
+
+                                SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH:mm");
+                                date1 = simpleDateFormat.parse(strtime);
+                                date2 = simpleDateFormat.parse("04:00 PM");
+
+                                long difference = date2.getTime() - date1.getTime();
+                                days = (int) (difference / (1000*60*60*24));
+                                hours = (int) ((difference - (1000*60*60*24*days)) / (1000*60*60));
+                               // min = (int) (difference - (1000*60*60*24*days) - (1000*60*60*hours)) / (1000*60);
+                                hours = (hours < 0 ? -hours : hours);
+
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
                             }catch (Exception e){
                                 e.printStackTrace();
                             }
@@ -170,6 +279,12 @@ public class TimeEntry extends AppCompatActivity {
                                 long mills = date1.getTime() - date2.getTime();
                                 int hours = (int) (mills / (1000 * 60 * 60));
                                 int mins = (int) ((mills / (1000 * 60)) % 60);
+<<<<<<< HEAD
+=======
+
+                               // Toast.makeText(TimeEntry.this, String.format("%02d:%02d", hours, mins), Toast.LENGTH_SHORT).show();
+
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
                                 wrked_time.setText(String.format("%02d:%02d", hours, mins));
                             }catch (Exception e){
                                 e.printStackTrace();
@@ -228,14 +343,50 @@ public class TimeEntry extends AppCompatActivity {
                     wrked_time.setText("");
                     Toast.makeText(TimeEntry.this, mess, Toast.LENGTH_SHORT).show();
                 }catch(Exception e){
+<<<<<<< HEAD
                     e.printStackTrace();
                 }
             }
 
+=======
+
+                    e.printStackTrace();
+
+                }
+            }
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
             @Override
             public void onFailure(Call<TimeAttendance_Recieve> call, Throwable t) {
 
             }
         });
     }
+<<<<<<< HEAD
+=======
+
+    public void uploaddata(){
+
+        adapter=new Adapter_timeentry(TimeEntry.this,arraytimeentrylist);
+        rcy_timentry.setLayoutManager(new LinearLayoutManager(TimeEntry.this, LinearLayoutManager.VERTICAL, false));
+        // rec_leavereqattachment.setLayoutManager(new Hori);
+        rcy_timentry.setItemAnimator(new DefaultItemAnimator());
+        rcy_timentry.setAdapter(adapter);
+
+       }
+
+    public void addmore(String date,String fromtime,String totime,String noofhours,String asignedby,String desc){
+
+        TimeentryModel data=new TimeentryModel();
+
+          data.setDate(date);
+          data.setFromtime(fromtime);
+          data.setTotime(totime);
+          data.setTotalhours(noofhours);
+          data.setAsigndby(asignedby);
+          data.setTskdescription(desc);
+          arraytimeentrylist.add(data);
+
+          adapter.notifyDataSetChanged();
+    }
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
 }

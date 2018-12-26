@@ -310,7 +310,11 @@
                          android:layout_marginTop="8dp"
                          android:layout_marginBottom="10dp"
                          android:textColor="@color/colorPrimary"
+<<<<<<< HEAD
                          android:text="Survey"/>
+=======
+                         android:text="Event/Training"/>
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
                  </LinearLayout>
              </android.support.v7.widget.CardView>
          </LinearLayout>

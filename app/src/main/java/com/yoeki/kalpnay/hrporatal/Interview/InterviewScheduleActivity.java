@@ -12,7 +12,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.yoeki.kalpnay.hrporatal.R;
+<<<<<<< HEAD
 import com.yoeki.kalpnay.hrporatal.Request.LeaveRequest;
+=======
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
 
 public class InterviewScheduleActivity extends AppCompatActivity  implements View.OnClickListener{
     private TextView interview_header,tv_responceinterview,tv_applicantname,tv_candidatedesignation;

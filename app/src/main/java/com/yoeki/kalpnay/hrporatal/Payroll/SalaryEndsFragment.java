@@ -2,21 +2,32 @@ package com.yoeki.kalpnay.hrporatal.Payroll;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+<<<<<<< HEAD
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+=======
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.yoeki.kalpnay.hrporatal.R;
 
+<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.List;
 
 public class SalaryEndsFragment extends Fragment {
 
     private RecyclerView ryc_AdvanceSalary;
+=======
+public class SalaryEndsFragment extends Fragment {
+
+    public SalaryEndsFragment() {
+        // Required empty public constructor
+    }
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -26,6 +37,7 @@ public class SalaryEndsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+<<<<<<< HEAD
 
         View view = inflater.inflate(R.layout.fragment_salayend, container, false);
 
@@ -60,4 +72,10 @@ public class SalaryEndsFragment extends Fragment {
 
     }
 
+=======
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_salayend, container, false);
+
+    }
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
 }

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edity_textbackground"
+    android:orientation="vertical"
+    android:layout_margin="6dp"
+    tools:context=".Request.Leave.LeaveRequest">
+
+    <LinearLayout
+        android:id="@+id/ly_allrequestmanin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.yoeki.kalpnay.hrporatal.setting.TextclassfrHeading
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="Title"
+                android:layout_weight=".5"
+                android:textColor="@color/colorblack"
+                android:textSize="13dp" />
+
+            <com.yoeki.kalpnay.hrporatal.setting.Textclass
+                android:id="@+id/tv_ettitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="Date"
+                android:layout_weight=".5"
+                android:textColor="@color/colorlightblack"
+                android:textSize="13dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.yoeki.kalpnay.hrporatal.setting.TextclassfrHeading
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="Description"
+                android:layout_weight=".5"
+                android:textColor="@color/colorblack"
+                android:textSize="13dp" />
+
+            <com.yoeki.kalpnay.hrporatal.setting.Textclass
+                android:id="@+id/tv_etdescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="Date"
+                android:layout_weight=".5"
+                android:textColor="@color/colorlightblack"
+                android:textSize="13dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.yoeki.kalpnay.hrporatal.setting.TextclassfrHeading
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:layout_weight=".5"
+                android:text="Location"
+                android:textColor="@color/colorblack"
+                android:textSize="13dp" />
+
+            <com.yoeki.kalpnay.hrporatal.setting.Textclass
+                android:id="@+id/tv_etlocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="Date"
+                android:layout_weight=".5"
+                android:textColor="@color/colorlightblack"
+                android:textSize="13dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.yoeki.kalpnay.hrporatal.setting.TextclassfrHeading
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:layout_weight=".5"
+                android:text="Vendor"
+                android:textColor="@color/colorblack"
+                android:textSize="13dp" />
+
+            <com.yoeki.kalpnay.hrporatal.setting.Textclass
+                android:id="@+id/tv_etvendor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="Date"
+                android:layout_weight=".5"
+                android:textColor="@color/colorlightblack"
+                android:textSize="13dp" />
+
+        </LinearLayout>
+
+       <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.yoeki.kalpnay.hrporatal.setting.TextclassfrHeading
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:layout_weight=".5"
+                android:text="From Date"
+                android:textColor="@color/colorblack"
+                android:textSize="13dp" />
+
+            <com.yoeki.kalpnay.hrporatal.setting.Textclass
+                android:id="@+id/tv_etfromedate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="Date"
+                android:layout_weight=".5"
+                android:textColor="@color/colorlightblack"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.yoeki.kalpnay.hrporatal.setting.TextclassfrHeading
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:layout_weight=".5"
+                android:text="To Date"
+                android:textColor="@color/colorblack"
+                android:textSize="13dp" />
+
+            <com.yoeki.kalpnay.hrporatal.setting.Textclass
+                android:id="@+id/tv_ettodate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="Date"
+                android:layout_weight=".5"
+                android:textColor="@color/colorlightblack"
+                android:textSize="13dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.yoeki.kalpnay.hrporatal.setting.TextclassfrHeading
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:layout_weight=".5"
+                android:text="From Time"
+                android:textColor="@color/colorblack"
+                android:textSize="13dp" />
+
+            <com.yoeki.kalpnay.hrporatal.setting.Textclass
+                android:id="@+id/tv_etfromtime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="Date"
+                android:layout_weight=".5"
+                android:textColor="@color/colorlightblack"
+                android:textSize="13dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.yoeki.kalpnay.hrporatal.setting.TextclassfrHeading
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:layout_weight=".5"
+                android:text="To Time"
+                android:textColor="@color/colorblack"
+                android:textSize="13dp" />
+
+            <com.yoeki.kalpnay.hrporatal.setting.Textclass
+                android:id="@+id/tv_ettotime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="Date"
+                android:layout_weight=".5"
+                android:textColor="@color/colorlightblack"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.yoeki.kalpnay.hrporatal.setting.TextclassfrHeading
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:layout_weight=".5"
+                android:text="Duration"
+                android:textColor="@color/colorblack"
+                android:textSize="13dp" />
+
+            <com.yoeki.kalpnay.hrporatal.setting.Textclass
+                android:id="@+id/tv_etduration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="Date"
+                android:layout_weight=".5"
+                android:textColor="@color/colorlightblack"
+                android:textSize="13dp" />
+        </LinearLayout>-->
+    </LinearLayout>
+</LinearLayout>

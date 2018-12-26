@@ -3,16 +3,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD
     android:background="#efeeee"
     android:orientation="vertical">
 
+=======
+    android:background="@color/colorAccent"
+    android:orientation="vertical">
+
+    <com.yoeki.kalpnay.hrporatal.setting.Edittextclass
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:hint="Search"
+        android:paddingTop="5dp"
+        android:textColorHint="@color/colorPrimary"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:layout_margin="12dp"
+        android:textSize="14dp"
+        android:drawableRight="@drawable/search_iconblue"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/edity_textbackground"/>
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/ryc_payrollsalary"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+<<<<<<< HEAD
         android:layout_marginBottom="5dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="5dp"></android.support.v7.widget.RecyclerView>
+=======
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:alpha=".9">
+    </android.support.v7.widget.RecyclerView>
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
 </LinearLayout>

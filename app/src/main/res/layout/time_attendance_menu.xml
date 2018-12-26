@@ -180,7 +180,11 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <android.support.v7.widget.CardView
+<<<<<<< HEAD
                     android:id="@+id/leave_request"
+=======
+                    android:id="@+id/leave_summery"
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
                     xmlns:card_view="http://schemas.android.com/apk/res-auto"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -193,17 +197,30 @@
                     android:layout_marginRight="05dp"
                     android:layout_marginBottom="10dp"
                     android:layout_gravity="center">
+<<<<<<< HEAD
+=======
+
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:padding="18dp"
                         android:orientation="vertical">
+<<<<<<< HEAD
+=======
+
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
                         <ImageView
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:layout_gravity="center"
+<<<<<<< HEAD
                             android:src="@mipmap/leave_request"/>
+=======
+                            android:src="@drawable/leave_request_icon"/>
+
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
                         <com.yoeki.kalpnay.hrporatal.setting.TextclassfrHeading
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -212,7 +229,12 @@
                             android:layout_marginTop="8dp"
                             android:layout_marginBottom="10dp"
                             android:textColor="@color/colorPrimary"
+<<<<<<< HEAD
                             android:text="Leave Request"/>
+=======
+                            android:text="Leave Summary"/>
+
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
 
@@ -254,6 +276,88 @@
                 </android.support.v7.widget.CardView>
             </LinearLayout>
 
+<<<<<<< HEAD
+=======
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <android.support.v7.widget.CardView
+                    android:id="@+id/leave_request"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardBackgroundColor="@color/textcolor"
+                    card_view:cardCornerRadius="5dp"
+                    card_view:cardElevation="10dp"
+                    android:layout_weight=".5"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="05dp"
+                    android:layout_marginRight="05dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="18dp"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/leave_request"/>
+                        <com.yoeki.kalpnay.hrporatal.setting.TextclassfrHeading
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textSize="15dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:text="Leave Request"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+               <!-- <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardBackgroundColor="@color/textcolor"
+                    card_view:cardCornerRadius="5dp"
+                    card_view:cardElevation="10dp"
+                    android:layout_weight=".5"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="05dp"
+                    android:layout_marginLeft="05dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp">-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="18dp"
+                        android:layout_weight=".5"
+                        android:orientation="vertical">
+                        <!--<ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/leavebalance"/>
+                        <com.yoeki.kalpnay.hrporatal.setting.TextclassfrHeading
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textSize="15dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:text="Leave Balance"/>-->
+                    </LinearLayout>
+                <!--</android.support.v7.widget.CardView>-->
+            </LinearLayout>
+
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
             <!--<LinearLayout-->
                 <!--android:layout_width="match_parent"-->
                 <!--android:layout_height="wrap_content"-->

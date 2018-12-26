@@ -8,10 +8,14 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+<<<<<<< HEAD
 
 import com.yoeki.kalpnay.hrporatal.Notification.EventFragment;
 import com.yoeki.kalpnay.hrporatal.R;
 
+=======
+import com.yoeki.kalpnay.hrporatal.R;
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
 import java.util.ArrayList;
 
 public class PreShiftFragment extends Fragment {
@@ -20,6 +24,10 @@ public class PreShiftFragment extends Fragment {
     ArrayList<Shiftmodel> arrayreqattachlist;
 
     public static PreShiftFragment newInstance() {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
         PreShiftFragment fragment = new PreShiftFragment();
 
         return fragment;
@@ -45,35 +53,55 @@ public class PreShiftFragment extends Fragment {
         data.setDatee("16/12/2018");
         data.setCurrentshit("8:00 AM");
         data.setChangeshift("9:00 AM");
+<<<<<<< HEAD
         data.setReason("Timimg");
+=======
+        data.setReason("Accepted");
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
         arrayreqattachlist.add(data);
 
         Shiftmodel data2=new Shiftmodel();
         data2.setDatee("16/12/2018");
         data2.setCurrentshit("10:00 AM");
         data2.setChangeshift("6:00 PM");
+<<<<<<< HEAD
         data2.setReason("Timimg");
+=======
+        data2.setReason("Accepted");
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
         arrayreqattachlist.add(data2);
 
         Shiftmodel data3=new Shiftmodel();
         data3.setDatee("17/12/2018");
         data3.setCurrentshit("8:00 AM");
         data3.setChangeshift("5:00 PM");
+<<<<<<< HEAD
         data3.setReason("Timimg");
+=======
+        data3.setReason("Pendding");
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
         arrayreqattachlist.add(data3);
 
         Shiftmodel data4=new Shiftmodel();
         data4.setDatee("17/12/2018");
         data4.setCurrentshit("6:00 AM");
         data4.setChangeshift("2:00 PM");
+<<<<<<< HEAD
         data4.setReason("Timimg");
+=======
+        data4.setReason("Accepted");
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
         arrayreqattachlist.add(data4);
 
         Shiftmodel data5=new Shiftmodel();
         data5.setDatee("18/12/2018");
         data5.setCurrentshit("6:00 AM");
         data5.setChangeshift("2:00 PM");
+<<<<<<< HEAD
         data5.setReason("Timimg");
+=======
+        data5.setReason("Rejected");
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
         arrayreqattachlist.add(data5);
 
         PreshiftAdapter   adapter=new PreshiftAdapter(getActivity(),arrayreqattachlist);

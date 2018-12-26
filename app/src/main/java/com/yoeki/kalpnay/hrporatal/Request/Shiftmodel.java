@@ -6,7 +6,25 @@ public class Shiftmodel {
     String currentshit;
     String changeshift;
     String reason;
+<<<<<<< HEAD
 
+=======
+    String status;
+    String name;
+
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public String getStatus() {
+        return status;
+    }
+    public void setStatus(String status) {
+        this.status = status;
+    }
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
     public String getDatee() {
         return datee;
     }

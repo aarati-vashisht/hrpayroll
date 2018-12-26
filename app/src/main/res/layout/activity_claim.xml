@@ -22,6 +22,7 @@
             android:textSize="@dimen/textFrHeading"
             android:textColor="@color/textcolor"/>
 
+<<<<<<< HEAD
         <FrameLayout android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginLeft="05dp">
@@ -495,5 +496,44 @@
             android:textColor="#fff"/>
 
     </RelativeLayout>
+=======
+        <!--<FrameLayout android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:layout_marginLeft="05dp">
+
+           <android.support.v7.widget.AppCompatButton
+               android:id="@+id/img_backrequest"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:background="@color/transparent"/>-->
+        <ImageView
+            android:id="@+id/img_backrequest"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="04dp"
+            android:scaleType="fitXY"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:background="@mipmap/back"
+            android:layout_gravity="left|center"/>
+        <!--  </FrameLayout>-->
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs_claimtab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:tabIndicatorColor="@color/textcolor"
+        app:tabIndicatorHeight="2dp"
+        app:tabTextAppearance="@style/tabtext"
+        android:minHeight="?attr/actionBarSize"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_claimpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"  />
+>>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
 
 </LinearLayout>
