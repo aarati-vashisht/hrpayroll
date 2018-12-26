@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/profile_icon"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_changepassword"
+            android:icon="@drawable/changepassword"
+            android:title="Change Password" />
+        <item
+            android:id="@+id/nav_allEmployee"
+            android:icon="@mipmap/interviewicon"
+            android:title="All Employee" />
+
+        <item
+            android:id="@+id/nav_interview"
+            android:icon="@mipmap/interview_icon"
+            android:title="Interview" />
+
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@mipmap/exit"
+            android:title="Exit/Separation" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout_icon"
+            android:title="Log Out" />
+
+    </group>
+
+
+</menu>

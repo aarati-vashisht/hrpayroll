@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yoeki.kalpnay.hrporatal">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".IntroScreenFragment.IntroActivity" />
+        <activity android:name=".HomeMenu.HomeActivity" />
+        <activity android:name=".Myintro" />
+        <activity android:name=".TimeAttendance.Time.TimeEntry" />
+        <activity android:name=".TimeAttendance.Holidays.Holiday_activity" />
+        <activity android:name=".TimeAttendance.Approval_Request.ViewPager.RequestManagementTab" />
+        <activity
+            android:name=".TimeAttendance.TimeAttendance_Menu"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".Request.LeaveRequest" />
+        <activity android:name=".Request.RequestMenu" />
+        <activity android:name=".TimeAttendance.Approval_Request.Requests" />
+        <activity android:name=".Profile.Profile" />
+        <activity android:name=".HomeMenu.SearchEmployeActivity" />
+        <activity android:name=".Payroll.PayrollHomeActivity" />
+        <activity android:name=".Payroll.SalaryDetailActivity" />
+        <activity android:name=".Notification.NotificationHomeActivity" />
+        <activity android:name=".Request.ClaimActivity" />
+        <activity android:name=".Request.TrainingActivity" />
+        <activity android:name=".Request.GreveanceActivity" />
+        <activity android:name=".Request.ShiftChange" />
+        <activity android:name=".Request.AdvanceActivity" />
+        <activity android:name=".Benefits.Home" />
+        <activity android:name=".Task_Monitoring.taskMonitoring" />
+        <activity android:name=".Benefits.HealthCare.homeHealth" />
+        <activity android:name=".Benefits.Critical.homeCritical" />
+        <activity android:name=".Benefits.PersonalBenefits.home_personalBenmefits" />
+        <activity android:name=".Benefits.RetirementBenefits.home_Retirement" />
+        <activity android:name=".Benefits.FlexibleBenefits.home_flexible" />
+        <activity android:name=".Benefits.OfficeErgonomics.HomeOfficeErgonomics" />
+        <activity android:name=".Question_surevey" />
+        <activity android:name=".Notification.EventDetails" />
+        <activity android:name=".Survey.ServayHomeActivity" />
+        <activity android:name=".Survey.ServayQuestionActivity" />
+        <activity android:name=".Survey.EventActivity" />
+        <activity android:name=".Login.LoginActivity" />
+        <activity android:name=".Plane.PlaneActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Plane.VendorMapsActivity"
+            android:label="@string/title_activity_vendor_maps" />
+        <activity android:name=".Plane.PlanHomeActivity" />
+        <activity android:name=".Plane.PlanformActivity" />
+        <activity android:name=".Plane.PlanEmployeemainActivity" />
+        <activity android:name=".Plane.EmployeeRequestformActivity" />
+        <activity android:name=".HomeMenu.EmployeeDetailActivity" />
+        <activity
+            android:name=".TimeAttendance.Time.TimeEntry_Week"
+            android:screenOrientation="portrait" />
+        <!-- Include the AdActivity configChanges and theme. -->
+        <!-- <activity -->
+        <!-- android:name="com.google.android.gms.ads.AdActivity" -->
+        <!-- android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" -->
+        <!-- android:theme="@android:style/Theme.Translucent" /> -->
+        <activity android:name=".Request.GrievanceListActivity" />
+        <activity android:name=".Request.Hrgrievanncelisthome" />
+        <activity android:name=".Interview.InterviewScheduleActivity" />
+        <activity android:name=".Exit.ExitActivity" />
+        <activity android:name=".Interview.InterviewHomeActivity" />
+        <activity android:name=".all_employee.AllEmployeeActivity" />
+        <activity
+            android:name=".all_employee.AllEmployeeDetailActivity"
+            android:label="@string/title_activity_all_employee_detail"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".all_employee.OrganizationChartActivity"></activity>
+    </application>
+
+</manifest>

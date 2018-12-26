@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialogbackground"
+    android:orientation="vertical">
+
+    <com.yoeki.kalpnay.hrporatal.setting.Textclass
+        android:id="@+id/claimtype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Traning Type"
+        android:textSize="18dp"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forgot"
+        android:gravity="left"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorPrimary"/>
+        <ListView
+            android:id="@+id/li_trainigcourselist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/textcolor"
+            android:layout_margin="7dp"></ListView>
+
+    </LinearLayout>
+
+</LinearLayout>

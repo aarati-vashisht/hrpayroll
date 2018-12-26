@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/textcolor"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorPrimaryDark">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/Pro_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="left|center"
+                    android:background="@mipmap/back"
+                    android:scaleType="fitXY" />
+
+            </FrameLayout>
+
+            <com.yoeki.kalpnay.hrporatal.setting.TextclassTextFrHeader
+                android:id="@+id/profileHeader"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:text="Survey"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="@dimen/textFrHeading"
+                android:textStyle="bold" />
+
+            <!--<FrameLayout android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true">-->
+
+            <!--<Button android:id="@+id/Pro_edit"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@color/transparent"/>-->
+
+            <!--<ImageView android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:background="@mipmap/edit"-->
+            <!--android:layout_gravity="right|center"/>-->
+            <!--</FrameLayout>-->
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <com.yoeki.kalpnay.hrporatal.setting.TextclassfrHeading
+        android:id="@+id/questions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="Are you Happy with your work environment."
+        android:textColor="@color/colorAccent"
+        android:textSize="25dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+
+        <com.hsalf.smilerating.SmileRating
+            android:id="@+id/question_Answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:isIndicator="false" />
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:layout_margin="16dp"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<android.support.v7.widget.LinearLayoutCompat-->
+            <!--android:id="@+id/number_rating"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:weightSum="5">-->
+
+            <!--<com.yoeki.kalpnay.hrporatal.setting.TextclassTextFrHeader-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="1"-->
+                <!--android:textAlignment="center"-->
+                <!--android:textColor="#3A3939"-->
+                <!--android:textSize="30sp" />-->
+
+            <!--<com.yoeki.kalpnay.hrporatal.setting.TextclassTextFrHeader-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="2"-->
+                <!--android:textAlignment="center"-->
+                <!--android:textColor="#3A3939"-->
+                <!--android:textSize="30sp" />-->
+
+            <!--<com.yoeki.kalpnay.hrporatal.setting.TextclassTextFrHeader-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="3"-->
+                <!--android:textAlignment="center"-->
+                <!--android:textColor="#3A3939"-->
+                <!--android:textSize="30sp" />-->
+
+            <!--<com.yoeki.kalpnay.hrporatal.setting.TextclassTextFrHeader-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="4"-->
+                <!--android:textAlignment="center"-->
+                <!--android:textColor="#3A3939"-->
+                <!--android:textSize="30sp" />-->
+
+            <!--<com.yoeki.kalpnay.hrporatal.setting.TextclassTextFrHeader-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="5"-->
+                <!--android:textAlignment="center"-->
+                <!--android:textColor="#3A3939"-->
+                <!--android:textSize="30sp" />-->
+
+        <!--</android.support.v7.widget.LinearLayoutCompat>-->
+
+        <!--<SeekBar-->
+            <!--android:id="@+id/seekBar"-->
+            <!--style="@style/custom_seekbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_marginTop="15dp" />-->
+
+        <!--&lt;!&ndash;<SeekBar&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/seekBar"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="50dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_below="@+id/number_rating"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:max="4"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:progress="0"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:progressDrawable="@drawable/cursor_progress"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:thumb="@drawable/cursor_control" />&ndash;&gt;-->
+
+    <!--</LinearLayout>-->
+</RelativeLayout>

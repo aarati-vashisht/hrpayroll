@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorgrey"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/rl_reqhomehead"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/img_searchback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:padding="10dp"/>
+
+        <com.yoeki.kalpnay.hrporatal.setting.Textclass
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search Employee"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:layout_margin="7dp"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/textcolor" />
+
+        <ImageView
+            android:id="@+id/img_searchemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/search_icon_white"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"/>
+    </RelativeLayout>
+
+    <!-- <com.yoeki.kalpnay.hrporatal.setting.Edittextclass
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:hint="Search Employee"
+         android:paddingTop="5dp"
+         android:textColorHint="@color/colorPrimary"
+         android:paddingBottom="5dp"
+         android:paddingLeft="5dp"
+         android:layout_margin="12dp"
+         android:textSize="14dp"
+         android:drawableRight="@drawable/search_iconblue"
+         android:textColor="@color/colorPrimary"
+         android:background="@drawable/edity_textbackground"/>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/ryc_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha=".8">
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
