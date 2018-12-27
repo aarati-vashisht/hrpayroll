@@ -262,7 +262,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         ly_task = findViewById(R.id.ly_task);
         ly_survey = findViewById(R.id.survey);
     }
-
+/////skndcjksdncjkdncjknxjcknzxjkcnjkxnjkx
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
