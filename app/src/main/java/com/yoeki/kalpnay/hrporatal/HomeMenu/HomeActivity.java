@@ -28,6 +28,7 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import com.yoeki.kalpnay.hrporatal.Benefits.Home;
 import com.yoeki.kalpnay.hrporatal.EventAndTraining.EventTrainingHome;
 import com.yoeki.kalpnay.hrporatal.Exit.ExitActivity;
@@ -56,16 +57,16 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener,View.OnClickListener {
+public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
 
     private FragmentManager fragmentManager;
     ApiInterface apiInterface;
     LinearLayoutManager linearlayoutmanager;
-    static String[] nameArray = {"Profile","Time Sheet","Requst","Payroll","Notification","Task Monitering"};
+    static String[] nameArray = {"Profile", "Time Sheet", "Requst", "Payroll", "Notification", "Task Monitering"};
     static Integer[] iconArray = {R.drawable.profile, R.drawable.timesheet_icon, R.drawable.request_icon, R.drawable.payroll_icon, R.drawable.notification_icon, R.drawable.survey};
     ArrayList<Menuitemmodel> menuarraylist;
     RecyclerView recyclearview;
-    private LinearLayout ly_homerequest,ly_profile,ly_timeAttendance,ly_payroll,ly_notification,benefits,ly_task,ly_survey;
+    private LinearLayout ly_homerequest, ly_profile, ly_timeAttendance, ly_payroll, ly_notification, benefits, ly_task, ly_survey;
 
     private static final int MY_PERMISSIONS_REQUEST_CODE = 123;
 
@@ -78,10 +79,10 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
         initialize();
 
-        fragmentManager=getSupportFragmentManager();
+        fragmentManager = getSupportFragmentManager();
         //  DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         //  final NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view)
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             checkPermission();
         }
 
@@ -94,9 +95,9 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         ly_task.setOnClickListener(this);
         ly_survey.setOnClickListener(this);
 
-        menuarraylist=new ArrayList<>();
+        menuarraylist = new ArrayList<>();
 
-        linearlayoutmanager=new LinearLayoutManager(this);
+        linearlayoutmanager = new LinearLayoutManager(this);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
 
@@ -108,15 +109,16 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        TextView textHeadername=navigationView.getHeaderView(0).findViewById(R.id.tv_heardename);
+        TextView textHeadername = navigationView.getHeaderView(0).findViewById(R.id.tv_heardename);
 
         try {
             String username = preferance.getInstance(getApplicationContext()).getUserName();
             textHeadername.setText(username);
-        }catch(Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
+
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -126,12 +128,13 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             super.onBackPressed();
         }
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         try {
             getMenuInflater().inflate(R.menu.main_menu, menu);
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return true;
@@ -146,11 +149,11 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_search) {
 
-            Intent intent=new Intent(HomeActivity.this,SearchEmployeActivity.class);
+            Intent intent = new Intent(HomeActivity.this, SearchEmployeActivity.class);
             startActivity(intent);
             return true;
-        }else if (id == R.id.action_notification){
-            Intent intent=new Intent(HomeActivity.this,NotificationHomeActivity.class);
+        } else if (id == R.id.action_notification) {
+            Intent intent = new Intent(HomeActivity.this, NotificationHomeActivity.class);
             startActivity(intent);
             return true;
         }
@@ -163,34 +166,31 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-        if (id == R.id.nav_profile){
+        if (id == R.id.nav_profile) {
 
-            Intent intent=new Intent(HomeActivity.this, Profile.class);
+            Intent intent = new Intent(HomeActivity.this, Profile.class);
             startActivity(intent);
             // Handle the camera action
         } else if (id == R.id.nav_changepassword) {
 
             changepassworddialog();
 
-        }else if (id == R.id.nav_allEmployee) {
+        } else if (id == R.id.nav_allEmployee) {
             Intent intent = new Intent(HomeActivity.this, AllEmployeeActivity.class);
             startActivity(intent);
         }  /*else if (id == R.id.nav_slideshow) {
         } else if (id == R.id.nav_manage) {
-        }*/
-        else if (id == R.id.nav_logout) {
+        }*/ else if (id == R.id.nav_logout) {
 
             logout();
 
         } else if (id == R.id.nav_interview) {
 
-            Intent intent=new Intent(HomeActivity.this, InterviewHomeActivity.class);
+            Intent intent = new Intent(HomeActivity.this, InterviewHomeActivity.class);
             startActivity(intent);
-        }
+        } else if (id == R.id.nav_exit) {
 
-        else if (id == R.id.nav_exit) {
-
-            Intent intent=new Intent(HomeActivity.this, ExitActivity.class);
+            Intent intent = new Intent(HomeActivity.this, ExitActivity.class);
             startActivity(intent);
 
         }
@@ -209,34 +209,34 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         dialog.setCancelable(true);
         dialog.setContentView(R.layout.changepassword_dialog);
 
-        final EditText edt_oldpass=dialog.findViewById(R.id.edt_oldpass);
-        final EditText edt_newpassword=dialog.findViewById(R.id.edt_newpassword);
-        final EditText edt_confirmpassword=dialog.findViewById(R.id.edt_confirmpassword);
-        TextView tv_submitchange=dialog.findViewById(R.id.tv_submitchange);
+        final EditText edt_oldpass = dialog.findViewById(R.id.edt_oldpass);
+        final EditText edt_newpassword = dialog.findViewById(R.id.edt_newpassword);
+        final EditText edt_confirmpassword = dialog.findViewById(R.id.edt_confirmpassword);
+        TextView tv_submitchange = dialog.findViewById(R.id.tv_submitchange);
 
         tv_submitchange.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String  user_id=null,oldpass,newpass,confirmpass;
+                String user_id = null, oldpass, newpass, confirmpass;
                 user_id = preferance.getInstance(getApplicationContext()).getUserId();
-                oldpass=edt_oldpass.getText().toString();
-                newpass=edt_newpassword.getText().toString();
-                confirmpass=edt_confirmpassword.getText().toString();
+                oldpass = edt_oldpass.getText().toString();
+                newpass = edt_newpassword.getText().toString();
+                confirmpass = edt_confirmpassword.getText().toString();
 
-                if (oldpass.equals("")){
+                if (oldpass.equals("")) {
                     edt_oldpass.setError("Fill Required field");
-                }else if (newpass.equals("")){
+                } else if (newpass.equals("")) {
                     edt_newpassword.setError("Fill Required field");
-                }else if (!newpass.equals(confirmpass)){
+                } else if (!newpass.equals(confirmpass)) {
                     Toast.makeText(HomeActivity.this, "Password Do not match", Toast.LENGTH_SHORT).show();
-                }else{
+                } else {
                     final ProgressDialog progressDialog = new ProgressDialog(HomeActivity.this);
                     progressDialog.setCancelable(false); // set cancelable to false
                     progressDialog.setMessage("Please Wait"); // set message
                     progressDialog.show(); // show progress dialog
 
-                    apiInterface= Api.getClient().create(ApiInterface.class);
-                    Changepassresponce user = new Changepassresponce(user_id,oldpass,newpass);
+                    apiInterface = Api.getClient().create(ApiInterface.class);
+                    Changepassresponce user = new Changepassresponce(user_id, oldpass, newpass);
 
                     Call<Changepassresponce> call1 = apiInterface.changepass(user);
                     call1.enqueue(new Callback<Changepassresponce>() {
@@ -244,18 +244,19 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                         public void onResponse(Call<Changepassresponce> call, Response<Changepassresponce> response) {
                             Changepassresponce user1 = response.body();
                             progressDialog.dismiss();
-                            String str=user1.getMessage();
+                            String str = user1.getMessage();
 
-                            String status=user1.getStatus();
-                            if (status.equals("Success")){
-                                Toast.makeText(getApplicationContext(),str, Toast.LENGTH_SHORT).show();
+                            String status = user1.getStatus();
+                            if (status.equals("Success")) {
+                                Toast.makeText(getApplicationContext(), str, Toast.LENGTH_SHORT).show();
                                 dialog.dismiss();
                                 successchange(str);
-                            }else{
+                            } else {
                                 //(LoginActivity).faillerdiaolog(str);
-                                Toast.makeText(getApplicationContext(),str, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), str, Toast.LENGTH_SHORT).show();
                             }
                         }
+
                         @Override
                         public void onFailure(Call<Changepassresponce> call, Throwable t) {
                             call.cancel();
@@ -268,66 +269,68 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         dialog.show();
     }
 
-    public  void initialize(){
-        ly_homerequest=findViewById(R.id.ly_homerequest);
-        ly_profile=findViewById(R.id.ly_profile);
-        ly_timeAttendance=findViewById(R.id.ly_timeAttendance);
-        ly_payroll=findViewById(R.id.ly_payroll);
-        ly_notification=findViewById(R.id.ly_notification);
-        benefits=findViewById(R.id.benefits);
-        ly_task=findViewById(R.id.ly_task);
-        ly_survey=findViewById(R.id.survey);
+    public void initialize() {
+        ly_homerequest = findViewById(R.id.ly_homerequest);
+        ly_profile = findViewById(R.id.ly_profile);
+        ly_timeAttendance = findViewById(R.id.ly_timeAttendance);
+        ly_payroll = findViewById(R.id.ly_payroll);
+        ly_notification = findViewById(R.id.ly_notification);
+        benefits = findViewById(R.id.benefits);
+        ly_task = findViewById(R.id.ly_task);
+        ly_survey = findViewById(R.id.survey);
     }
+
+    /////////////// i have done changes......
     @Override
     public void onClick(View view) {
-        switch (view.getId()){
+        switch (view.getId()) {
             case R.id.ly_homerequest:
-                Intent intent=new Intent(HomeActivity.this, RequestMenu.class);
+                Intent intent = new Intent(HomeActivity.this, RequestMenu.class);
                 startActivity(intent);
                 break;
             case R.id.ly_profile:
-                Intent intent1=new Intent(HomeActivity.this, Profile.class);
+                Intent intent1 = new Intent(HomeActivity.this, Profile.class);
                 startActivity(intent1);
                 break;
             case R.id.ly_timeAttendance:
-                Intent intent0=new Intent(HomeActivity.this, TimeAttendance_Menu.class);
+                Intent intent0 = new Intent(HomeActivity.this, TimeAttendance_Menu.class);
                 startActivity(intent0);
                 break;
             case R.id.ly_payroll:
-                Intent intentpayroll=new Intent(HomeActivity.this, SalaryDetailActivity.class);
+                Intent intentpayroll = new Intent(HomeActivity.this, SalaryDetailActivity.class);
                 startActivity(intentpayroll);
                 break;
-            case  R.id.ly_notification:
-                Intent inten=new Intent(HomeActivity.this, PlanHomeActivity.class);
+            case R.id.ly_notification:
+                Intent inten = new Intent(HomeActivity.this, PlanHomeActivity.class);
                 startActivity(inten);
                 break;
-            case  R.id.benefits:
-                Intent Binten=new Intent(HomeActivity.this, Home.class);
+            case R.id.benefits:
+                Intent Binten = new Intent(HomeActivity.this, Home.class);
                 startActivity(Binten);
                 break;
-            case  R.id.ly_task:
-                Intent nten=new Intent(HomeActivity.this, taskMonitoring.class);
+            case R.id.ly_task:
+                Intent nten = new Intent(HomeActivity.this, taskMonitoring.class);
                 startActivity(nten);
                 break;
-            case  R.id.survey:
-                Intent ntn=new Intent(HomeActivity.this, EventTrainingHome.class);
+            case R.id.survey:
+                Intent ntn = new Intent(HomeActivity.this, EventTrainingHome.class);
                 startActivity(ntn);
                 break;
         }
     }
 
-    protected void checkPermission(){
-        if(ContextCompat.checkSelfPermission(HomeActivity.this, Manifest.permission.CAMERA)
+    protected void checkPermission() {
+        if (ContextCompat.checkSelfPermission(HomeActivity.this, Manifest.permission.CAMERA)
                 + ContextCompat.checkSelfPermission(
                 HomeActivity.this, Manifest.permission.READ_CONTACTS)
                 + ContextCompat.checkSelfPermission(
                 HomeActivity.this, Manifest.permission.WRITE_EXTERNAL_STORAGE)
-                != PackageManager.PERMISSION_GRANTED){
+                != PackageManager.PERMISSION_GRANTED) {
             // Do something, when permissions not granted
-            if(ActivityCompat.shouldShowRequestPermissionRationale(
+            if (ActivityCompat.shouldShowRequestPermissionRationale(
                     HomeActivity.this, Manifest.permission.READ_EXTERNAL_STORAGE)
                     || ActivityCompat.shouldShowRequestPermissionRationale(
-                    HomeActivity.this, Manifest.permission.WRITE_EXTERNAL_STORAGE)){
+                    HomeActivity.this, Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
                 // If we should give explanation of requested permissions
 
                 // Show an alert dialog here with request explanation
@@ -348,10 +351,10 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                         );
                     }
                 });
-                builder.setNeutralButton("Cancel",null);
+                builder.setNeutralButton("Cancel", null);
                 AlertDialog dialog = builder.create();
                 dialog.show();
-            }else{
+            } else {
                 // Directly request for required permissions, without explanation
                 ActivityCompat.requestPermissions(
                         HomeActivity.this,
@@ -362,26 +365,26 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                         MY_PERMISSIONS_REQUEST_CODE
                 );
             }
-        }else{
+        } else {
             // Do something, when permissions are already granted
             // Toast.makeText(HomeActivity.this,"Permissions already granted",Toast.LENGTH_SHORT).show();
         }
     }
+
     @Override
-    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults){
-        switch (requestCode){
-            case MY_PERMISSIONS_REQUEST_CODE:{
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        switch (requestCode) {
+            case MY_PERMISSIONS_REQUEST_CODE: {
                 // When request is cancelled, the results array are empty
-                if(
-                        (grantResults.length >0) &&
+                if (
+                        (grantResults.length > 0) &&
                                 (grantResults[0]
-                                        + grantResults[1]== PackageManager.PERMISSION_GRANTED
+                                        + grantResults[1] == PackageManager.PERMISSION_GRANTED
                                 )
-                        )
-                {
+                        ) {
                     // Permissions are granted
                     // Toast.makeText(HomeActivity.this,"Permissions granted.",Toast.LENGTH_SHORT).show();
-                }else {
+                } else {
                     // Permissions are denied
                     //  Toast.makeText(HomeActivity.this,"Permissions denied.",Toast.LENGTH_SHORT).show();
                 }
@@ -390,7 +393,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         }
     }
 
-    public  void logout(){
+    public void logout() {
         new SweetAlertDialog(HomeActivity.this, SweetAlertDialog.WARNING_TYPE)
                 .setTitleText("Are you sure?")
                 .setContentText("Won't be Logout!")
@@ -401,7 +404,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                         sDialog.dismissWithAnimation();
                         preferance.getInstance(getApplicationContext()).clearuserSession();
 
-                        Intent intent=new Intent(HomeActivity.this,LoginActivity.class);
+                        Intent intent = new Intent(HomeActivity.this, LoginActivity.class);
                         startActivity(intent);
 
                         finish();
@@ -418,7 +421,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
     }
 
-    public  void successchange(String msg){
+    public void successchange(String msg) {
 
         new SweetAlertDialog(HomeActivity.this, SweetAlertDialog.WARNING_TYPE)
                 .setTitleText(msg)
@@ -437,7 +440,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
                         preferance.getInstance(getApplicationContext()).clearuserSession();
 
-                        Intent intent=new Intent(HomeActivity.this,LoginActivity.class);
+                        Intent intent = new Intent(HomeActivity.this, LoginActivity.class);
                         startActivity(intent);
 
                         finish();
