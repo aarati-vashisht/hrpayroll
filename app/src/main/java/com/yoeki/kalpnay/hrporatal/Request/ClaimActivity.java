@@ -230,7 +230,7 @@ public class ClaimActivity extends AppCompatActivity implements View.OnClickList
 
         dialog.show();
     }
-
+///changes
     public void initialize(){
         ly_claimtypehotelview=findViewById(R.id.ly_claimtypehotelview);
         ly_claimtypeother=findViewById(R.id.ly_claimtypeother);
