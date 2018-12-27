@@ -3,13 +3,9 @@ package com.yoeki.kalpnay.hrporatal.Benefits.PersonalBenefits;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-<<<<<<< HEAD
-
-=======
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.ImageView;
->>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
 import com.yoeki.kalpnay.hrporatal.R;
 
 /**
@@ -18,8 +14,6 @@ import com.yoeki.kalpnay.hrporatal.R;
 
 public class home_personalBenmefits extends AppCompatActivity {
 
-<<<<<<< HEAD
-=======
       ImageView personal_back;
       WebView web_personalbenifits;
       String str="<p><strong><span style=\"font-size: 16pt;\">Personal Benefits</span></strong></p>\n" +
@@ -30,13 +24,10 @@ public class home_personalBenmefits extends AppCompatActivity {
               "<p><span style=\"font-size: 12pt;\">In addition, there is an increasing use of bonuses, perks, and incentives by employers to recruit and retain employees. Look at the companies rated the&nbsp;best places to work&nbsp;and you'll discover many offer health club memberships, flexible schedules, daycare, tuition reimbursement, and even on-site dry cleaning.</span></p>\n" +
               "</div>";
 
->>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_personal_benefit);
-<<<<<<< HEAD
-=======
 
         personal_back=findViewById(R.id.personal_back);
 
@@ -52,6 +43,5 @@ public class home_personalBenmefits extends AppCompatActivity {
         });
 
 
->>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
     }
 }

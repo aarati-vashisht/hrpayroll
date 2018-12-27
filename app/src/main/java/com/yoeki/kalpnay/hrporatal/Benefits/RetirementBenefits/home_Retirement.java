@@ -3,12 +3,9 @@ package com.yoeki.kalpnay.hrporatal.Benefits.RetirementBenefits;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-<<<<<<< HEAD
-=======
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.ImageView;
->>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
 
 import com.yoeki.kalpnay.hrporatal.R;
 
@@ -18,8 +15,6 @@ import com.yoeki.kalpnay.hrporatal.R;
 
 public class home_Retirement extends AppCompatActivity {
 
-<<<<<<< HEAD
-=======
     ImageView retairement_back;
     WebView webviewretirment;
     String str="<p><strong><span style=\"font-size: 16.0pt; line-height: 107%;\">Retirement Benefits</span></strong></p>\n" +
@@ -28,13 +23,10 @@ public class home_Retirement extends AppCompatActivity {
             "<li style=\"text-indent: -.25in;\"><span style=\"font-size: 12pt;\">In&nbsp;<strong>defined benefit plans</strong>(sometimes called pension plans), the benefit amount is pre-determined based on salary and the years of service. In these plans, the employer bears the risk of the investment.</span></li>\n" +
             "<li style=\"text-indent: -.25in;\"><span style=\"font-size: 12pt;\">In&nbsp;<strong>defined contribution plans</strong>(such as a 401k plan), employer or employee contributions are specified, but the benefit amount is usually tied to investment returns, which are not guaranteed.</span></li>\n" +
             "</ul>";
->>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_retirement);
-<<<<<<< HEAD
-=======
 
         retairement_back=findViewById(R.id.retairement_back);
         webviewretirment=findViewById(R.id.webviewretirment);
@@ -49,6 +41,5 @@ public class home_Retirement extends AppCompatActivity {
 
             }
         });
->>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
     }
 }

@@ -163,8 +163,13 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
     private void login(String username,String password){
+
+
+        Intent intent=new Intent(LoginActivity.this,HomeActivity.class);
+        startActivity(intent);
+
         // display a progress dialog
-        final ProgressDialog progressDialog = new ProgressDialog(LoginActivity.this);
+       /* final ProgressDialog progressDialog = new ProgressDialog(LoginActivity.this);
         progressDialog.setCancelable(false); // set cancelable to false
         progressDialog.setMessage("Please Wait"); // set message
         progressDialog.show(); // show progress dialog
@@ -187,8 +192,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     preferance.getInstance(getApplicationContext()).saveuserLogin(user1.getUserId());
                     preferance.getInstance(getApplicationContext()).saveuserName(user1.getUserName());
 
-                    Intent intent=new Intent(LoginActivity.this,HomeActivity.class);
-                    startActivity(intent);
+                    *//*Intent intent=new Intent(LoginActivity.this,HomeActivity.class);
+                    startActivity(intent);*//*
                 }else{
                     faillerdiaolog(str);
                     // Toast.makeText(getApplicationContext(),str, Toast.LENGTH_SHORT).show();
@@ -202,7 +207,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 progressDialog.dismiss();
             }
         });
-
+*/
     }
-
 }

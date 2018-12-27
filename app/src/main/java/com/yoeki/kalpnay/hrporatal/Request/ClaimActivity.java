@@ -56,7 +56,7 @@ public class ClaimActivity extends AppCompatActivity implements View.OnClickList
     private Edittextclass edt_claimreqamount,edt_claimreqdescription,tv_claimtypetravelarivalto,tv_claimtypetraveldeparturefrom,tv_claimtypehotelname,tv_claimtypehotellocation;
     private int mYear, mMonth, mDay,mHour,mMinute;
     String str="temp",filepath;
-    AppCompatButton img_backrequestclaim;
+   // AppCompatButton img_backrequestclaim;
     ArrayList<Menuitemmodel> arrayreqattachlist;
     RecyclerView rec_leavereqattachment;
     Textclass tv_leavereqdescription;
@@ -75,7 +75,7 @@ public class ClaimActivity extends AppCompatActivity implements View.OnClickList
         tv_claimreqtype.setOnClickListener(this);
         tv_claimtypetravelmode.setOnClickListener(this);
         tv_claimreqattachment.setOnClickListener(this);
-        img_backrequestclaim.setOnClickListener(this);
+     //   img_backrequestclaim.setOnClickListener(this);
         tv_leavereqsubmit.setOnClickListener(this);
 
     }
@@ -103,9 +103,9 @@ public class ClaimActivity extends AppCompatActivity implements View.OnClickList
                 uploadattachmentdialog();
                 break;
 
-            case R.id.img_backrequestclaim:
-                finish();
-                break;
+//            case R.id.img_backrequestclaim:
+//                finish();
+//                break;
 
             case  R.id.tv_leavereqsubmit:
 
@@ -249,7 +249,7 @@ public class ClaimActivity extends AppCompatActivity implements View.OnClickList
         tv_claimtypetraveldeparturefrom=findViewById(R.id.tv_claimtypetraveldeparturefrom);
         tv_claimtypetravelarivalto=findViewById(R.id.tv_claimtypetravelarivalto);
         rec_leavereqattachment=findViewById(R.id.rec_leavereqattachment);
-        img_backrequestclaim=findViewById(R.id.img_backrequestclaim);
+       // img_backrequestclaim=findViewById(R.id.img_backrequestclaim);
         ly_attachmentclaim=findViewById(R.id.ly_attachmentclaim);
 
         edt_claimreqamount=findViewById(R.id.edt_claimreqamount);

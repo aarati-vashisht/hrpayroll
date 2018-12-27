@@ -8,20 +8,20 @@
     <color name="colorblack">#111111</color>
     <color name="colorgrey">#eff0f1</color>
     <color name="colorgreydark">#bdbdbd</color>
-<<<<<<< HEAD
+
     <color name="greydark">#ececec</color>
-=======
->>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
+
+
     <color name="colorgreen">#398d94</color>
     <color name="Approve_switch">#016ea5</color>
     <color name="white">#FFFFFF</color>
     <color name="white_trans">#99FFFFFF</color>
     <color name="colorBackground">#f3f5f8</color>
-<<<<<<< HEAD
-    <color name="offwhite">#faf0e6</color>
-=======
 
->>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
+    <color name="offwhite">#faf0e6</color>
+
+
+
     <color name="colorlightblack">#696969</color>
     <color name="colorHeader">#c8e0e3</color>
     <color name="transparent">#00000000</color>
@@ -33,10 +33,10 @@
 
     <color name="accent">#2789e4</color>
     <color name="toolbar">#efefef</color>
-<<<<<<< HEAD
+
     <color name="black">#000</color>
     <color name="background">#F9F9F9</color>
     <color name="green">#49A4A8</color>
-=======
->>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
+
+
 </resources>

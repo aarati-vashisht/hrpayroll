@@ -7,11 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorAccent"
     android:orientation="vertical"
-<<<<<<< HEAD
-    tools:context=".Request.LeaveRequest">
-=======
     tools:context=".Request.Leave.LeaveRequest">
->>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
 
     <RelativeLayout
         android:id="@+id/rl_reqhomehead"

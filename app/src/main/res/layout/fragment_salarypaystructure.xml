@@ -1,22 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#efeeee"
-    android:orientation="vertical">
-
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/ryc_earning"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="5dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        ></android.support.v7.widget.RecyclerView>
-
-=======
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -213,5 +195,4 @@
 
         </LinearLayout>
     </ScrollView>
->>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
 </LinearLayout>

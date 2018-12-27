@@ -5,13 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SplashActivity">
-<<<<<<< HEAD
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/colorPrimaryDark">
-=======
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -29,18 +22,13 @@
             <!--app:rb_rippleAmount="6"-->
             <!--app:rb_duration="3000"-->
             <!--app:rb_scale="6">-->
->>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
 
         <ImageView
             android:id="@+id/img_splash"
             android:layout_width="140dp"
             android:layout_height="140dp"
             android:layout_centerInParent="true"
-<<<<<<< HEAD
-            android:src="@drawable/logo" />
-=======
             android:src="@drawable/logogreen"/>
         <!--</com.skyfishjy.library.RippleBackground>-->
->>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

@@ -15,10 +15,10 @@ import java.util.List;
 public class EarningAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private static final int TYPE_ITEM = 2;
 
-    private List<Paystructuremodel.EarningDetail> salleryList;
+    private List<EarningDetail> salleryList;
     private Activity activity;
 
-    public EarningAdapter(Activity activity, List<Paystructuremodel.EarningDetail> strings) {
+    public EarningAdapter(Activity activity, List<EarningDetail> strings) {
         this.activity = activity;
         this.salleryList = strings;
     }

@@ -15,10 +15,10 @@ import java.util.List;
 public class DeductionAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private static final int TYPE_ITEM = 2;
 
-    private List<Paystructuremodel.DeductionDetail> salleryList;
+    private List<DeductionDetail> salleryList;
     private Activity activity;
 
-    public DeductionAdapter(Activity activity, List<Paystructuremodel.DeductionDetail> strings) {
+    public DeductionAdapter(Activity activity, List<DeductionDetail> strings) {
         this.activity = activity;
         this.salleryList = strings;
     }

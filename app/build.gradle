@@ -4,11 +4,11 @@ android {
     compileSdkVersion 27
     defaultConfig {
         applicationId "com.yoeki.kalpnay.hrporatal"
-<<<<<<< HEAD
+
         minSdkVersion 21
-=======
+
         minSdkVersion 19
->>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
+
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"

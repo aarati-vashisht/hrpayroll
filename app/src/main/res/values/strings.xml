@@ -52,7 +52,7 @@
     <string name="action_day_view">Day view</string>
     <string name="action_three_day_view">3 day view</string>
     <string name="action_week_view">Week view</string>
-<<<<<<< HEAD
+
     <string name="title_activity_all_employee_detail">AllEmployeeDetailActivity</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
@@ -143,6 +143,6 @@
         "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
         "when a user tries to pick up one of cards.\n\n"
     </string>
-=======
->>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
+
+
 </resources>

@@ -29,11 +29,11 @@
         <activity
             android:name=".TimeAttendance.TimeAttendance_Menu"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-<<<<<<< HEAD
+
         <activity android:name=".Request.LeaveRequest" />
-=======
+
         <activity android:name=".Request.Leave.LeaveRequest" />
->>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
+
         <activity android:name=".Request.RequestMenu" />
         <activity android:name=".TimeAttendance.Approval_Request.Requests" />
         <activity android:name=".Profile.Profile" />
@@ -41,11 +41,11 @@
         <activity android:name=".Payroll.PayrollHomeActivity" />
         <activity android:name=".Payroll.SalaryDetailActivity" />
         <activity android:name=".Notification.NotificationHomeActivity" />
-<<<<<<< HEAD
+
         <activity android:name=".Request.ClaimActivity" />
-=======
+
         <activity android:name=".Request.Claim.ClaimActivity" />
->>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
+
         <activity android:name=".Request.TrainingActivity" />
         <activity android:name=".Request.GreveanceActivity" />
         <activity android:name=".Request.ShiftChange" />
@@ -98,20 +98,20 @@
         <activity android:name=".Interview.InterviewScheduleActivity" />
         <activity android:name=".Exit.ExitActivity" />
         <activity android:name=".Interview.InterviewHomeActivity" />
-<<<<<<< HEAD
+
         <activity android:name=".all_employee.AllEmployeeActivity" />
         <activity
             android:name=".all_employee.AllEmployeeDetailActivity"
             android:label="@string/title_activity_all_employee_detail"
             android:theme="@style/AppTheme" />
         <activity android:name=".all_employee.OrganizationChartActivity"></activity>
-=======
+
         <activity android:name=".Request.shiftchangemanager.ShiftmanagerHomeactivity" />
         <activity android:name=".Jobposting.JobpostingHomeActivity" />
         <activity android:name=".TimeAttendance.Leave_summery.SummeryHomeActivity" />
         <activity android:name=".EventAndTraining.EventTrainingHome" />
         <activity android:name=".EventAndTraining.EventDetailsActivity"></activity>
->>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
+
     </application>
 
 </manifest>

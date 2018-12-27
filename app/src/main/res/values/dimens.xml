@@ -14,12 +14,12 @@
     <dimen name="textFrHeader">15sp</dimen>
     <dimen name="textFrHeading">20sp</dimen>
     <dimen name="textFrSubmitButton">15sp</dimen>
-<<<<<<< HEAD
+
     <dimen name="app_bar_height">180dp</dimen>
     <dimen name="text_margin">16dp</dimen>
     <dimen name="spacing_normal">16dp</dimen>
     <dimen name="spacing_normalv">30dp</dimen>
     <dimen name="image_width">100dp</dimen>
-=======
->>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
+
+
 </resources>

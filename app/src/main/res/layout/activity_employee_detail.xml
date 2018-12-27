@@ -297,10 +297,6 @@
                 android:orientation="horizontal"
                 android:gravity="left|center"
                 android:background="@color/colorgrey">
-<<<<<<< HEAD
-=======
-
->>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
                 <com.yoeki.kalpnay.hrporatal.setting.Textclass
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

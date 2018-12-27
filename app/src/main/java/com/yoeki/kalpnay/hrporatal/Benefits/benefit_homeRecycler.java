@@ -41,15 +41,9 @@ public class benefit_homeRecycler extends RecyclerView.Adapter<benefit_homeRecyc
         mItems.add(R.mipmap.critical);
         mItems.add(R.mipmap.personal_benefit);
         mItems.add(R.mipmap.retirement_benefits);
-<<<<<<< HEAD
-        mItems.add(R.mipmap.flexible_benefit);
-        mItems.add(R.mipmap.creative_benefits);
-        mItems.add(R.mipmap.office_ergonomics);
-=======
        /* mItems.add(R.mipmap.flexible_benefit);
         mItems.add(R.mipmap.creative_benefits);
         mItems.add(R.mipmap.office_ergonomics);*/
->>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
     }
 
     @Override
@@ -85,17 +79,10 @@ public class benefit_homeRecycler extends RecyclerView.Adapter<benefit_homeRecyc
                 public void onClick(View v) {
                     Intent intent;
                     String topic = benefit_name.getText().toString();
-<<<<<<< HEAD
-                    if(topic.equals("Health Care")){
-                        intent = new Intent(context,homeHealth.class);
-                        context.startActivity(intent);
-                    }else if (topic.equals("Critical/Illness")){
-=======
                     if(topic.equals("Medical Insurance")){
                         intent = new Intent(context,homeHealth.class);
                         context.startActivity(intent);
                     }else if (topic.equals("Critical illness")){
->>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
                         intent = new Intent(context,homeCritical.class);
                         context.startActivity(intent);
                     }else if (topic.equals("Personal Benefits")){
@@ -104,11 +91,7 @@ public class benefit_homeRecycler extends RecyclerView.Adapter<benefit_homeRecyc
                     }else if (topic.equals("Retirement Benefits")){
                         intent = new Intent(context,home_Retirement.class);
                         context.startActivity(intent);
-<<<<<<< HEAD
-                    }else if (topic.equals("Flexible Benefits")){
-=======
                     }/*else if (topic.equals("Flexible Benefits")){
->>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
                         intent = new Intent(context,home_flexible.class);
                         context.startActivity(intent);
                     }else if (topic.equals("Creative Benefits/Perks")){
@@ -116,11 +99,7 @@ public class benefit_homeRecycler extends RecyclerView.Adapter<benefit_homeRecyc
                     }else if (topic.equals("Office Ergonomics")){
                         intent = new Intent(context,HomeOfficeErgonomics.class);
                         context.startActivity(intent);
-<<<<<<< HEAD
-                    }
-=======
                     }*/
->>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
                 }
             });
         }

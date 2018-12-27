@@ -25,10 +25,6 @@ public class NewShiftFragment extends Fragment {
 
         return fragment;
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -37,10 +33,7 @@ public class NewShiftFragment extends Fragment {
         arrayreqattachlist=new ArrayList<>();
 
         rcy_shiftnew=view.findViewById(R.id.rcy_shiftnew);
-<<<<<<< HEAD
-=======
 
->>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
           uploaddata();
 
         return view;
@@ -48,15 +41,6 @@ public class NewShiftFragment extends Fragment {
 
     public void uploaddata(){
 
-<<<<<<< HEAD
-           /* Shiftmodel data=new Shiftmodel();
-            data.setDatee(date);
-            data.setCurrentshit(current);
-            data.setChangeshift(tochange);
-            data.setReason(reason);*/
-           // arrayreqattachlist.add(data);
-=======
->>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
          adapter=new NewShiftAdapter(getActivity(),arrayreqattachlist,NewShiftFragment.this);
         rcy_shiftnew.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false));
         // rec_leavereqattachment.setLayoutManager(new Hori);

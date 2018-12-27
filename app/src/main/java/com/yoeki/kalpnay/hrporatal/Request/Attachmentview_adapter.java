@@ -1,10 +1,7 @@
 package com.yoeki.kalpnay.hrporatal.Request;
 
 import android.app.Activity;
-<<<<<<< HEAD
-=======
 import android.content.Context;
->>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,11 +11,8 @@ import android.widget.TextView;
 
 import com.yoeki.kalpnay.hrporatal.HomeMenu.Menuitemmodel;
 import com.yoeki.kalpnay.hrporatal.R;
-<<<<<<< HEAD
-=======
 import com.yoeki.kalpnay.hrporatal.Request.Leave.LeaveRequest;
 import com.yoeki.kalpnay.hrporatal.Request.Leave.NewLeaveFragment;
->>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
 
 import java.util.ArrayList;
 
@@ -30,20 +24,14 @@ private static final int TYPE_ITEM = 2;
 
 private ArrayList<Menuitemmodel> stringArrayList;
 private Activity activity;
-<<<<<<< HEAD
-=======
 NewLeaveFragment fragment;
 Context context;
->>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
 
 public Attachmentview_adapter(Activity activity, ArrayList<Menuitemmodel> strings) {
 
         this.activity = activity;
         this.stringArrayList = strings;
-<<<<<<< HEAD
-=======
      //   this.fragment=fragment;
->>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
 
         }
 @Override
@@ -107,27 +95,17 @@ private class FooterViewHolder extends RecyclerView.ViewHolder {
             @Override
             public void onClick(View view) {
 
-<<<<<<< HEAD
-                if(activity instanceof LeaveRequest){
-
-                    ((LeaveRequest)activity).uploadattachmentdialog();
-=======
               new NewLeaveFragment().uploadattachmentdialog(activity);
 
                 /*if(fragment instanceof NewLeaveFragment){
 
                     fragment.uploadattachmentdialog();
->>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
 
                 }else if (activity instanceof ClaimActivity){
 
                     ((ClaimActivity)activity).uploadattachmentdialog();
 
-<<<<<<< HEAD
-                }
-=======
                 }*/
->>>>>>> 97810a8fed45ceb07d3fceb585c36b7874331e05
 
             }
         });
